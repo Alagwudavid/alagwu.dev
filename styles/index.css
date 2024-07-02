@@ -1,0 +1,326 @@
+/*COMMONS STYLES*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1d293a;
+    font-family: "Roboto", sans-serif;
+}
+
+ul li {
+    list-style: none;
+}
+
+/*BODY*/
+header {
+    max-width: 1480px;
+    padding: 30px 72px;
+    margin: 0 auto;
+}
+
+header .screen {
+    max-width: 520px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    margin: 0 auto;
+}
+
+.screen .link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-style: normal;
+}
+.link:hover {
+    color: #e80881;
+    transition: all ease-in .3s;
+}
+
+header .logo {
+    color: #e80881;
+    font-family: "Playwrite IT Moderna", cursive;
+    font-size: 22px;
+    cursor: default;
+}
+
+
+
+
+
+main {
+    max-width: 1480px;
+    padding: 30px 72px;
+    margin: 0 auto;
+}
+
+main #home{
+    max-width: 520px;
+    padding: 12px;
+    margin: 10px auto;
+    border-radius: 14px;
+    border: solid 3px #bdb9b9;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#home .home-landing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+#home .home-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+#home .home-img{
+    margin: auto 0;
+}
+#home img {
+    /* width: 100%;
+    height: 100%; */
+    border-radius: 14px;
+    border: solid 3px #bdb9b9;
+}
+/* #home span {
+    font-size: 18px;
+    font-weight: 500;
+} */
+
+#home .miniInfo {
+    display: flex;
+    gap: 6px;
+    font-size: 12px !important;
+    color: #bdb9b9;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#home .miniInfo .dot {
+    width: 3px;
+    height: 3px;
+    padding: 2px;
+    border-radius: 100%;
+    background-color: #999;
+}
+#home .home-mail {
+    font-size: 12px;
+    color: #bdb9b9;
+}
+#home .home-skill {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4px;
+    font-size: 12px;
+}
+#home .home-head {
+    font-size: 32px;
+}
+.home-skill li{
+    padding: 3px 8px;
+    border-radius: 25px;
+    background-color: #d3ae42;
+    color: #000;
+}
+
+
+
+
+
+main #portfolio{
+    max-width: 520px;
+    margin: 20px auto;
+    text-align: center;
+    border: #2d5eff solid 2px;
+    border-radius: 6px;
+}
+#portfolio .skill-set{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0;
+}
+.skill-set .skill-item{
+    font-weight: 700;
+    color: white;
+}
+.skill-set .skill-item:hover {
+    color: #2d5eff;
+    transition: all ease-in-out .3s;
+    cursor: grab;
+}
+
+
+
+
+
+
+main #about{
+    max-width: 520px;
+    margin: 20px auto;
+    text-align: center;
+    border: #d3ae42 solid 2px;
+    border-radius: 6px;
+}
+#about .about-heading {
+    color: #ffffff;
+    background-color: #d3ae42;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+}
+#about .about-description {
+    color: #fff;
+    font-size: 14px;
+    text-align: justify;
+    margin: 10px;
+}
+
+
+
+
+main #contact{
+    max-width: 520px;
+    margin: 20px auto;
+    text-align: center;
+}
+#contact .contact-heading{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+}
+#contact .contact-set{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0;
+}
+#contact p {
+    color: white;
+}
+#contact .contact-link{
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    text-decoration: none;
+}
+
+
+
+
+footer {
+    max-width: 1480px;
+    padding: 30px 72px;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    max-width: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
+    font-weight: 700;
+    font-style: normal;
+}
+footer p .footerLink {
+    color: red;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 480px) {
+    body {
+      background-color: white;
+      color: #000 !important;
+    }
+    header .screen .link {
+        display: none;
+    }
+    header .mobile {
+        display: flex;
+        align-content: center;
+    }
+    main {
+    padding: 30px 32px;
+    }
+
+    main section {
+        min-width: 312px;
+    }
+
+    main #home {
+        color: #000;
+        border-color: #000;
+    }
+
+    main #home .home-img {
+        margin: 0 auto;
+    }
+
+    main #home img {
+        border-color: #000;
+    }
+
+    #home .home-landing {
+        flex-direction: column;
+    }
+
+    #home .miniInfo {
+        color: #000;
+    }
+
+    #home .miniInfo .dot {
+        display: none;
+    }
+    #home .home-mail{
+        color: #000;
+        text-align: center;
+    }
+    #home .home-title {
+        text-align: center;
+    }
+    #home .home-skill {
+        justify-content: center;
+    }
+
+    
+    #portfolio .skill-set .skill-item{
+        color: #000;
+    }
+    #about .about-description {
+        color: #000;
+        text-align: left;
+    }
+
+    #contact .contact-heading{
+        color: #000;
+    }
+    #contact p {
+        color: #000;
+    }
+    footer p {
+        color: #000;
+    }
+  }

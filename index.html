@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alagwu.dev || Home (A personal portfolio website)</title>
+    
+    <!--Links-->
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header>
+        <ul class="screen">
+            <li><a class="link" href="#home">Home</a></li>
+            <li><a class="link" href="#portfolio">Portfolio</a></li>
+            <li class="navLink logo">_alagwu.dev</li>
+            <li><a class="link" href="#about">About</a></li>
+            <li><a class="link" href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <main>
+        <section id="home">
+            <div class="home-landing">
+                <div class="home-info">
+                    <h1 data-testid="Alagwu David" class="home-title">Alagwu David</h1>
+                    <div class="miniInfo">
+                        <span><i class="fa-solid fa-location-dot"></i> Remote, Nigeria</span>
+                        <span class="dot"></span>
+                        <div><i class="fa-regular fa-clock"></i> <span data-testid="currentDay" id="currentTimeUTC"></span></div> 
+                    </div>
+                    <span data-testid="alagwudavid2019@gmail.com" class="home-mail"><i class="fa-regular fa-envelope"></i> alagwudavid2019@gmail.com</span>
+            <ul class="home-skill">
+                <li>Full-Stack</li>
+                <li>Graphic designer</li>
+                <li>Mechanical Engineer</li>
+                <li>Software Engineer</li>
+                <li>Web Developer</li>
+            </ul>
+                </div>
+                <div class="home-img" data-test-id="slackProfilePicture">
+                    <img src="./assets/profile.jpg" />
+                </div>
+            </div>
+        </section>
+        
+        <section id="portfolio">
+            <div style="color: #ffffff;background-color: #2d5eff; text-transform: uppercase;font-size: 20px;font-weight: 700;">Skills</div>
+            <div class="skill-set">
+                <span class="skill-item">HTML</span>
+                <span class="skill-item">CSS</span>
+                <span class="skill-item">JavaScript</span>
+                <span class="skill-item">React</span>
+                <span class="skill-item">PHP</span>
+                <span class="skill-item">MySql</span>
+                <span class="skill-item">MS Office</span>
+                <span class="skill-item">Adobe Illustrator</span>
+            </div>
+        </section>
+
+
+
+        <section id="about">
+            <div class="about-heading">About Me</div>
+            <div class="about-description">
+                Hello! I'm Alagwu David, a passionate software engineer. I develop web applications and produce graphic designs. i specualize in many areas and skills and I love to do most of the things using JavaScript.
+                <br />
+                I plan to become a Software engineer and a Cyber-security expert in 2+ years
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="contact-heading">contact me</div>
+            <div>
+                <p style="margin: 14px 0px;font-family: 'Playwrite IT Moderna', cursive;">Care to reach out to me <i class="fa-regular fa-thumbs-up"></i></p>
+                <div class="contact-set">
+                <a href="https://www.wynx.vercel.com/" class="contact-link" style="background-color: #d3ae42;color: #000;"><i class="fa-solid fa-link"></i> Wynx</a>
+                <a href="https://www.github.com/alagwudavid" class="contact-link" style="background-color: #111a28;"><i class="fa-brands fa-github"></i> Github</a>
+                <a href="mailto:alagwudavid2019@gmail.com" class="contact-link" style="background-color: #2d5eff;"><i class="fa-solid fa-at"></i> Mail</a>
+                <a href="https://wa.me/+2349045492542" class="contact-link" style="background-color: #06e79c;color: black;"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a>
+                </div>
+            </div>
+            <div>
+                <p style="margin: 14px 0px;font-family: 'Playwrite IT Moderna', cursive;">SEO links: <i class="fa-solid fa-up-right-from-square"></i></p>
+                <div class="contact-set">
+                <a target="_blank" data-testid="https://hng.tech/learn" href="https://hng.tech/learn" class="contact-link" style="background-color: #d3ae42;color: #000;"><i class="fa-solid fa-link"></i> hng.tech</a>
+                <a target="_blank" data-testid="https://keyword.dog/" href="https://keyword.dog/" class="contact-link" style="background-color: #111a28;"><i class="fa-solid fa-link"></i> Keyword.dog</a>
+                <a target="_blank" data-testid="https://scrapeanyweb.site/" href="https://scrapeanyweb.site/" class="contact-link" style="background-color: #06e79c;color: black;"><i class="fa-solid fa-link"></i> Scrapeanyweb.site</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>
+            Made with <i class="fa-solid fa-heart fa-beat-fade footerLink"></i> by <a href="https://wynx.vercel.app" class="footerLink"> Me.</a>
+        </p>
+    </footer>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
