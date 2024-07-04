@@ -250,7 +250,7 @@ footer p .footerLink {
 }
 
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 480px) {
     body {
       background-color: white;
       color: #000 !important;
@@ -305,7 +305,9 @@ footer p .footerLink {
         justify-content: center;
     }
 
-    
+    #portfolio .skill-set {
+        padding: 10px;
+    }
     #portfolio .skill-set .skill-item{
         color: #000;
     }
